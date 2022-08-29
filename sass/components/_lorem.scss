@@ -1,0 +1,32 @@
+.lorem {
+  display: flex;
+  margin: 0;
+  gap: 30px;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.lorem__item {
+  color: #757575;
+}
+.lorem__icon-box {
+  height: 120px;
+  width: 270px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.lorem__icon {
+  width: 70px;
+  height: 70px;
+  fill: black;
+}
+.lorem__title {
+  color: rgba(33, 33, 33, 1);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
