@@ -24,15 +24,16 @@
   justify-content: center;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
+  &:hover {
+    background-color: $blue;
+    transition: $transition;
+  }
+  &:hover svg {
+    fill: white;
+    transition: $transition;
+  }
 }
-.social-list__circle:hover svg {
-  fill: white;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-list__circle:hover {
-  background-color: var(--blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .social-list__circle--footer {
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -42,12 +43,12 @@
   justify-content: center;
   display: flex;
   margin-top: 20px;
-}
-.social-icon-circle-footer:hover {
-  background-color: var(--blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon-circle-footer:hover svg {
-  fill: white;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $blue;
+    transition: $transition;
+  }
+  &:hover svg {
+    fill: white;
+    transition: $transition;
+  }
 }

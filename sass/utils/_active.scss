@@ -4,7 +4,7 @@
 .active::after {
   content: "";
   height: 4px;
-  background-color: var(--blue);
+  background-color: $blue;
   position: absolute;
   border-radius: 2px;
   width: 100%;

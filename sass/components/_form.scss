@@ -19,7 +19,7 @@
   border-radius: 4px;
 }
 .form a {
-  color: var(--blue);
+  color: $blue;
   font-size: 14px;
 }
 .form__label {
@@ -42,8 +42,8 @@
   margin-bottom: 4px;
   padding-left: 42px;
   &:focus {
-    outline-color: var(--blue);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline-color: $blue;
+    transition: $transition;
   }
 }
 
@@ -60,8 +60,8 @@
 .form__input--name:focus + .form__input--name-svg,
 .form__input--phone:focus + .form__input--phone-svg,
 .form__input--email:focus + .for.form__input--email-svg {
-  fill: var(--blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $blue;
+  transition: $transition;
 }
 
 .form__close-btn {
@@ -77,13 +77,13 @@
   justify-content: center;
   align-items: center;
   &:hover {
-    color: var(--blue);
-    border: 1px solid var(--blue);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $blue;
+    border: 1px solid $blue;
+    transition: $transition;
   }
   &:hover svg {
-    fill: var(--blue);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $blue;
+    transition: $transition;
   }
 }
 
@@ -117,14 +117,14 @@
   margin-bottom: 20px;
 }
 .form__textarea:focus {
-  outline-color: var(--blue);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline-color: $blue;
+  transition: $transition;
 }
 
 .form__sendbutton {
   width: 200px;
   height: 50px;
-  background-color: var(--blue);
+  background-color: $blue;
   color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -153,7 +153,7 @@
   display: none;
 }
 .policies-checkbox:checked + .form__policies::before {
-  background-color: var(--blue);
+  background-color: $blue;
   border: 1px solid white;
   background-image: url(../images/tick.svg);
   background-repeat: no-repeat;
