@@ -1,11 +1,13 @@
 @import "./utils/vars";
 @import "./utils/visualy-hidden";
-@import "./base/common";
-@import "./base/container";
-@import "./base/section";
 @import "./utils/active";
 @import "./utils/link";
 @import "./utils/nobulett-list";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
 @import "./components/logo";
 @import "./components/header";
 @import "./components/intro";

@@ -9,6 +9,29 @@
   transform: scaleY(0);
 }
 
+.active {
+  position: relative;
+}
+.active:after {
+  content: "";
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  border-radius: 2px;
+  width: 100%;
+  bottom: -31px;
+}
+
+.link {
+  color: black;
+}
+
+.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,30 +59,6 @@ body {
   padding-top: 94px;
 }
 
-.active {
-  position: relative;
-}
-
-.active::after {
-  content: "";
-  height: 4px;
-  background-color: #2196f3;
-  position: absolute;
-  border-radius: 2px;
-  width: 100%;
-  bottom: -31px;
-}
-
-.link {
-  color: black;
-}
-
-.no-bullets {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .logo-top a:link {
   color: black;
   text-decoration: none;
@@ -79,7 +78,6 @@ body {
   padding-top: 60px;
   margin-bottom: 20px;
 }
-
 .footer__logo-bottom a {
   text-decoration: none;
   color: white;
@@ -126,22 +124,9 @@ body {
   gap: 46px;
   margin-left: 93px;
 }
-
-.nav a:link {
-  color: black;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: space-between;
-  text-align: center;
-}
-.nav a:link:hover {
+.nav:hover {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav a:visited {
-  color: black;
-  text-decoration: none;
 }
 
 .mail {
@@ -153,7 +138,6 @@ body {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .mail__envelope-icon {
   width: 16px;
   height: 16px;
@@ -174,7 +158,6 @@ body {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .phone__phone-icon {
   height: 16px;
   width: 10px;
@@ -196,14 +179,12 @@ body {
   margin: 0;
   text-align: center;
 }
-
 .intro__banner {
   display: flex;
   flex-flow: column;
   align-items: center;
   padding: 200px 0 200px 0;
 }
-
 .intro__slogan {
   width: 696px;
   text-align: center;
@@ -212,8 +193,12 @@ body {
   font-size: 44px;
   justify-content: center;
 }
-
 .intro__button {
+  background-color: #2196f3;
+  color: white;
+  width: 200px;
+  font-size: 16px;
+  margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -225,20 +210,8 @@ body {
   margin-top: 30px;
 }
 .intro__button:hover, .intro__button:focus {
-  background-color: #2196f3;
-  color: white;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bluebutton {
-  background-color: #2196f3;
-  color: white;
-  width: 200px;
-  font-size: 16px;
-  line-height: 30px;
-  margin-top: 30px;
 }
 
 .form {
@@ -259,12 +232,10 @@ body {
   box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
 .form a {
   color: #2196f3;
   font-size: 14px;
 }
-
 .form__label {
   display: block;
   position: relative;
@@ -273,10 +244,7 @@ body {
   text-align: left;
   line-height: 1.2;
 }
-
-.form__input--name,
-.form__input--phone,
-.form__input--email {
+.form__input--name, .form__input--phone, .form__input--email {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -285,16 +253,11 @@ body {
   margin-bottom: 4px;
   padding-left: 42px;
 }
-.form__input--name:focus,
-.form__input--phone:focus,
-.form__input--email:focus {
+.form__input--name:focus, .form__input--phone:focus, .form__input--email:focus {
   outline-color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form__input--name-svg,
-.form__input--phone-svg,
-.form__input--email-svg {
+.form__input--name-svg, .form__input--phone-svg, .form__input--email-svg {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -302,14 +265,10 @@ body {
   width: 18px;
   height: 18px;
 }
-
-.form__input--name:focus + .form__input--name-svg,
-.form__input--phone:focus + .form__input--phone-svg,
-.form__input--email:focus + .for.form__input--email-svg {
+.form__input--name:focus + .form__input--name-svg, .form__input--phone:focus + .form__input--phone-svg, .form__input--email:focus + .form__input--email-svg {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form__close-btn {
   position: absolute;
   right: 8px;
@@ -332,14 +291,12 @@ body {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form__title {
   font-size: 20px;
   font-weight: 700;
   color: rgb(33, 33, 33);
   margin-bottom: 12px;
 }
-
 .form__close-svg {
   fill: rgb(0, 0, 0);
   position: relative;
@@ -347,7 +304,6 @@ body {
   height: 18px;
   width: 18px;
 }
-
 .form__textarea {
   width: 448px;
   height: 120px;
@@ -364,12 +320,10 @@ body {
   resize: none;
   margin-bottom: 20px;
 }
-
 .form__textarea:focus {
   outline-color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form__sendbutton {
   width: 200px;
   height: 50px;
@@ -381,7 +335,6 @@ body {
   border: 0;
   cursor: pointer;
 }
-
 .form__policies {
   font-size: 14px;
   margin-top: 20px;
@@ -431,11 +384,10 @@ body {
   margin-bottom: 10px;
   font-size: 14px;
 }
-
 .lorem__item {
   color: #757575;
+  line-height: 1.7;
 }
-
 .lorem__icon-box {
   height: 120px;
   width: 270px;
@@ -446,13 +398,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .lorem__icon {
   width: 70px;
   height: 70px;
   fill: black;
 }
-
 .lorem__title {
   color: rgb(33, 33, 33);
   font-size: 14px;
@@ -465,7 +415,6 @@ body {
   font-size: 32px;
   margin-bottom: 50px;
 }
-
 .about__list {
   display: flex;
   justify-content: space-between;
@@ -473,11 +422,9 @@ body {
   text-align: center;
   padding-bottom: 94px;
 }
-
 .about__item {
   position: relative;
 }
-
 .about__subtitle {
   width: 370px;
   height: 70px;
@@ -594,14 +541,12 @@ body {
   gap: 30px;
   width: 1170px;
 }
-
 .client-list__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
-
-.client-list__box {
+.client-listclient-list__box {
   height: 92px;
   width: 170px;
   border: 1px solid rgb(175, 177, 184);
@@ -610,11 +555,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.client-list__box:hover {
+.client-listclient-list__box:hover {
   border: 1px solid #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-list__box:hover svg {
+.client-listclient-list__box:hover svg {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -624,7 +569,6 @@ body {
   background-color: #2f303a;
   margin-top: 94px;
 }
-
 .footer__flex {
   display: flex;
   gap: 70px;
@@ -636,23 +580,12 @@ body {
   padding-bottom: 60px;
   text-align: left;
 }
-
 .contact-bottom__address {
   font-style: normal;
   text-align: left;
   margin-top: 0;
   font-size: 14px;
 }
-
-.contacts {
-  list-style-type: none;
-}
-
-.contacts__item {
-  padding-top: 9px;
-  font-size: 14px;
-}
-
 .contact-bottom__links a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -663,24 +596,29 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.joinus__title {
+.contacts {
+  list-style-type: none;
+}
+.contacts__item {
+  padding-top: 9px;
   font-size: 14px;
-  font-weight: 700;
 }
 
 .joinus {
   padding-top: 72px;
 }
+.joinus__title {
+  font-size: 14px;
+  font-weight: 700;
+}
 
 .newsletter {
   padding-top: 72px;
 }
-
 .newsletter__signin {
   display: inline-flex;
   gap: 12px;
 }
-
 .newsletter__input {
   margin-top: 20px;
   background-color: transparent;
@@ -697,7 +635,6 @@ body {
   outline: 0;
   border: 1px solid #2196f3;
 }
-
 .newsletter__button {
   margin-top: 20px;
   width: 200px;
@@ -714,11 +651,12 @@ body {
   color: white;
   font-size: 16px;
 }
-
 .newsletter__send-icon {
   position: absolute;
   left: 148px;
   fill: white;
+  width: 24px;
+  height: 24px;
 }
 
 .portfolio__filters {
