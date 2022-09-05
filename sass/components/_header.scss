@@ -47,7 +47,8 @@
       color: black;
       text-decoration: none;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       color: $blue;
       transition: $transition;
     }
@@ -58,7 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: $blue;
     transition: $transition;
   }
@@ -68,7 +70,8 @@
     height: 16px;
     fill: #757575;
     margin-right: 10px;
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       fill: $blue;
       transition: $transition;
     }
@@ -79,7 +82,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: $blue;
     transition: $transition;
   }
@@ -89,7 +93,8 @@
     width: 10px;
     fill: #757575;
     margin-right: 10px;
-    &:hover {
+    &:hover,
+    &:focus svg {
       fill: $blue;
       transition: $transition;
     }
