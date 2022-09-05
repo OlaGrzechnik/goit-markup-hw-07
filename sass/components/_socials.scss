@@ -24,11 +24,13 @@
   justify-content: center;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $blue;
     transition: $transition;
   }
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: white;
     transition: $transition;
   }
@@ -43,11 +45,13 @@
   justify-content: center;
   display: flex;
   margin-top: 20px;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $blue;
     transition: $transition;
   }
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: white;
     transition: $transition;
   }

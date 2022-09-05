@@ -9,7 +9,7 @@
     fill: #afb1b8;
   }
 
-  &client-list__box {
+  &__box {
     height: 92px;
     width: 170px;
     border: 1px solid rgba(175, 177, 184, 1);
@@ -18,11 +18,13 @@
     align-items: center;
     justify-content: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border: 1px solid $blue;
       transition: $transition;
     }
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       fill: $blue;
       transition: $transition;
     }

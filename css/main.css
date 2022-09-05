@@ -20,6 +20,7 @@
   border-radius: 2px;
   width: 100%;
   bottom: -31px;
+  left: 0;
 }
 
 .link {
@@ -124,7 +125,18 @@ body {
   gap: 46px;
   margin-left: 93px;
 }
-.nav:hover {
+.nav a {
+  color: black;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+.nav a:hover {
   color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -438,12 +450,16 @@ body {
   padding-top: 27px;
 }
 
+.team {
+  background-color: #f5f4fa;
+  width: 1600px;
+  padding-bottom: 94px;
+}
 .team__title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 50px;
 }
-
 .team__list {
   display: flex;
   justify-content: center;
@@ -451,13 +467,6 @@ body {
   width: 1170px;
   margin: auto;
 }
-
-.team {
-  background-color: #f5f4fa;
-  width: 1600px;
-  padding-bottom: 94px;
-}
-
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -465,14 +474,12 @@ body {
   color: black;
   margin-bottom: 10px;
 }
-
 .team__figcaption {
   text-align: center;
   color: #757575;
   padding-top: 30px;
   padding-bottom: 16px;
 }
-
 .team__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -508,11 +515,11 @@ body {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-list__circle:hover {
+.social-list__circle:hover, .social-list__circle:focus {
   background-color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list__circle:hover svg {
+.social-list__circle:hover svg, .social-list__circle:focus svg {
   fill: white;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -527,11 +534,11 @@ body {
   display: flex;
   margin-top: 20px;
 }
-.social-list__circle--footer:hover {
+.social-list__circle--footer:hover, .social-list__circle--footer:focus {
   background-color: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list__circle--footer:hover svg {
+.social-list__circle--footer:hover svg, .social-list__circle--footer:focus svg {
   fill: white;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -546,7 +553,7 @@ body {
   height: 60px;
   fill: #afb1b8;
 }
-.client-listclient-list__box {
+.client-list__box {
   height: 92px;
   width: 170px;
   border: 1px solid rgb(175, 177, 184);
@@ -555,11 +562,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.client-listclient-list__box:hover {
+.client-list__box:hover, .client-list__box:focus {
   border: 1px solid #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-listclient-list__box:hover svg {
+.client-list__box:hover svg, .client-list__box:focus svg {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
